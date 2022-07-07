@@ -1,0 +1,12 @@
+<form action="/api/category/update" enctype="multipart/form-data" method="post">
+    <input type="hidden" name="id" value="{{category._id}}" hidden required>
+    <label for="name">Category name</label>
+    <input type="text" id="name" name="name" value="{{category.name}}" required>
+    <br>
+    <br>
+    <label for="img">Category img</label>
+    <input type="file" id="img" name="img">
+    <br>
+    <br>
+    <button type="submit" class="update">Update</button>
+</form>

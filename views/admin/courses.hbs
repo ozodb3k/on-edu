@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+{{#if courses.length}}
+{{#each courses}}
+<div class="courses">
+    <img src="{{img}}" alt="{{img}}">
+    <h3>{{title}}</h3>
+    <p>Price: {{price}}$</p>
+    <p>Author: {{author}}</p>
+    <a href="/api/courses/{{_id}}" class="open">Open</a>
+</div>
+{{/each}}
+{{else}}
+<h2>Courses are empty</h2>
+{{/if}}
+
+<br><br>
+<a href="/api/courses/add" class="add add_course">Add new course</a>

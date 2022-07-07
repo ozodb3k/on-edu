@@ -1,0 +1,39 @@
+<div class="content">
+  <h2>Edit profile</h2>
+  <form action="/api/profile" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="_id" value="{{admin._id}}" />
+    <label for="username">Username</label>
+    <br />
+    <input
+      type="text"
+      name="username"
+      id="username"
+      value="{{admin.username}}"
+      required
+    />
+    <br /><br />
+    <label for="password">Password</label>
+    <br />
+    <input type="password" name="password" id="password" />
+    <br /><br />
+    <label for="name">Name</label>
+    <br />
+    <input type="text" name="name" id="name" value="{{admin.name}}" required />
+    <br /><br />
+    <label for="surname">Surname</label>
+    <br />
+    <input
+      type="text"
+      name="surname"
+      id="surname"
+      value="{{admin.surname}}"
+      required
+    />
+    <br /><br />
+    <label for="adminImg">Avatar</label>
+    <br />
+    <input type="file" name="adminImg" id="adminImg" />
+    <br /><br />
+    <input type="submit" class="btn btn-submit" />
+  </form>
+</div>

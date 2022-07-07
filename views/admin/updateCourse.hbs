@@ -1,0 +1,35 @@
+<form action="/api/courses/update" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="{{course._id}}" required>
+
+    <label for="title">Course title</label>
+    <input type="text" id="title" name="title" value="{{course.title}}" required>
+    <br>
+    <br>
+    <label for="description">Course description</label>
+    <br>
+    <textarea name="description" id="description" cols="30" rows="10" required>{{course.description}}</textarea>
+    <br>
+    <br>
+    <label for="author">Course author</label>
+    <input type="text" id="author" name="author" value="{{course.author}}" required>
+    <br>
+    <br>
+    <label for="img">Course language</label>
+    <select name="language" id="language" required>
+        <option value="English" selected>English</option>
+        <option value="Russian">Russian</option>
+        <option value="Uzbek">Uzbek</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="price">Course price</label>
+    <input type="number" id="price" name="price" value="{{course.price}}" required>
+    <br>
+    <br>
+    <label for="img">Course img</label>
+    <input type="file" id="img" name="img">
+    <br>
+    <br>
+    <button type="submit" class="update">Update</button>
+</form>

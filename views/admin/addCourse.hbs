@@ -1,0 +1,33 @@
+<form action="/api/courses/add" method="post" enctype="multipart/form-data">
+    <label for="title">Course title</label>
+    <input type="text" id="title" name="title" required>
+    <br>
+    <br>
+    <label for="description">Course description</label>
+    <br>
+    <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+    <br>
+    <br>
+    <label for="author">Course author</label>
+    <input type="text" id="author" name="author" required>
+    <br>
+    <br>
+    <label for="img">Course language</label>
+    <select name="language" id="language">
+        <option value="English" selected>English</option>
+        <option value="Russian">Russian</option>
+        <option value="Uzbek">Uzbek</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="price">Course price</label>
+    <input type="number" id="price" name="price" required>
+    <br>
+    <br>
+    <label for="img">Course img</label>
+    <input type="file" id="img" name="img" required>
+    <br>
+    <br>
+    <button type="submit" class="create">Create</button>
+</form>
